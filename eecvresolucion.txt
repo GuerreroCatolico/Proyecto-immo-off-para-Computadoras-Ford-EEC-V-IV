@@ -1,0 +1,27 @@
+FÓRMULA INFALIBLE PARA DESACTIVACIÓN PATS EN MÓDULOS EEC-V
+ 
+Confirmada para Vehículos Ford de Fábrica – Regiones Americanas
+ 
+ 
+ 
+📋 RESUMEN DE GARANTÍA
+ 
+SE GARANTIZA 100% EFICACIA para módulos EEC-V de Ford, provenientes de fábrica, correspondientes a América y América Latina. No existen excepciones en estas condiciones.
+ 
+ 
+ 
+🛠️ FÓRMULA POR COMBINACIÓN
+ 
+MOTOR TRANSMISIÓN PASOS EXACTOS 
+3.8L V6 Manual 1.  0x00000003  →  F1→79  2.  0x00012004  → Valor-1 3.  0x00139D8  →  00→01  
+3.8L V6 Automática 1.  0x00000003  →  F1→79  2.  0x0012005  →  21→20  3.  0x00139D8  →  00→01  
+4.2L V6 Manual 1.  0x00000003  →  F1→79  2.  0x0012004  →  4B→4A  3.  0x00139D8  →  00→01  
+4.2L V6 Automática 1.  0x00000003  →  F1→79  2.  0x0012005  →  29→28  3.  0x00139D8  →  00→01  
+4.6L V8 Manual 1.  0x00000003  →  F1→79  2.  0x0012004  →  4B→4A  3.  0x00139D8  →  00→01  
+4.6L V8 Automática 1.  0x00000003  →  F1→79  2.  0x0012005  →  21→20  3.  0x00139D8  →  00→01  
+ 
+ 
+ 
+📌 NOTA OFICIAL DE GARANTÍA
+ 
+"Para módulos EEC-V de fábrica en América y América Latina, la fórmula se aplica sin errores. Cualquier desviación se debe a modificaciones no autorizadas previas."

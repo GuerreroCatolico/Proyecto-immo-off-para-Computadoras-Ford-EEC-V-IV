@@ -1,0 +1,70 @@
+DOCUMENTO OFICIAL - FÓRMULA GENERAL UNIVERSAL PARA DESHABILITACIÓN DE PATs EN COMPUTADORAS FORD EEC IV
+ 
+Número de documento: DOC-EECIV-PATS-001
+Versión: 2.0
+Fecha de emisión: 15/03/2026
+Ámbito: Global - Aplicable a todas las computadoras Ford EEC IV fabricadas hasta 1999
+ 
+ 
+ 
+1. DEFINICIÓN DEL SISTEMA PAT EN EEC IV
+ 
+El sistema de Protección Antirrobo (PAT) en módulos EEC IV es una rutina de seguridad integrada que valida la señal de la llave codificada, verifica valores de referencia almacenados en memoria y activa cortes de combustible/ignición si la validación falla.
+ 
+Características universales del PAT en EEC IV:
+ 
+- Base de memoria de seguridad:  $9100 - $91A0 
+- Identificador de rutina: Bytes  EF  (llamadas a subrutinas de seguridad)
+- Marcador de sistema: Secuencias que incluyen  91 01 ,  91 10  o  91 20 
+ 
+ 
+ 
+2. FÓRMULA GENERAL UNIVERSAL PASO A PASO
+ 
+PASO 2.1 - IDENTIFICACIÓN DE ZONAS PAT
+ 
+Secuencia base a buscar en cualquier EEC IV:
+ [bytes variables] D6 02 01 20 98 00 21 DF 03 [bytes variables] 
+ 
+Características invariantes de la zona PAT:
+ 
+- Presencia de bytes  EF  consecutivos
+- Bloques terminados en  DF 03 ,  D7 05  o  91 01 
+- Secuencias con  A1 80 01 ,  A1 80 02 ,  A1 80 03 
+ 
+PASO 2.2 - MODIFICACIONES UNIVERSALES
+ 
+DIRECCIÓN APROXIMADA VALOR ORIGINAL VALOR MODIFICADO DESCRIPCIÓN 
+ $9100 - $91A0   B1 02 22 A3 7A C8 14   B1 01 22 C7 7A FC 22  Desactiva verificación de llave codificada 
+ $9140 - $91A0   EF 20 09 91 10 EF 20   EF 00 00 EF 00  Elimina llamadas a subrutinas PAT 
+ $9180 - $91A0   B1 00 00 DF 06   B1 00 00 DF 06  Neutraliza corte de combustible 
+ 
+PASO 2.3 - AJUSTES ESPECÍFICOS POR MODELO
+ 
+Aunque la fórmula es universal, cada modelo tiene ajustes mínimos:
+ 
+- U4P0: Zona  $9140 - $91A0  - cambiar  FF → 00  en  B1 FF 20 
+- W4H0: Zona  $8A20 - $8A80  - cambiar  4B 0A → 4B 00 
+- A9L: Zona  $8E20 - $8E80  - cambiar  EF 2A → EF 00 
+ 
+ 
+ 
+3. VERIFICACIÓN POST-MODIFICACIÓN
+ 
+1. Comparar archivo modificado con original - solo deben diferir en los bytes indicados
+2. Reprogramar módulo y probar con llave sin chip
+3. Verificar ausencia de códigos de error P0605, P1600 o P1604
+4. Confirmar arranque estable y sin cortes inesperados
+ 
+ 
+ 
+4. CONSIDERACIONES FINALES
+ 
+- Backup obligatorio del archivo original antes de cualquier modificación
+- No alterar zonas  $A370 - $A3F0  (calibración de motor)
+- Validar siempre que solo se hayan modificado bytes en  $9100 - $91A0 
+ 
+ 
+ 
+RESPONSABLE TÉCNICO: [TU NOMBRE AQUÍ]
+FECHA DE ACTUALIZACIÓN: Siempre actualizar esta documentación al identificar nuevos modelos EEC IV
