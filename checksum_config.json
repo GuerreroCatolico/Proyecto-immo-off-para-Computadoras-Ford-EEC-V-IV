@@ -1,0 +1,38 @@
+{
+    "3.8L V6 Manual": {
+        "rango_calculo_eecv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eecv": "0x00000010"
+    },
+    "3.8L V6 Automática": {
+        "rango_calculo_eecv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eecv": "0x00000010"
+    },
+    "4.2L V6 Manual": {
+        "rango_calculo_eecv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eecv": "0x00000010"
+    },
+    "4.2L V6 Automática": {
+        "rango_calculo_eecv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eecv": "0x00000010"
+    },
+    "4.6L V8 Manual": {
+        "rango_calculo_eecv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eecv": "0x00000010"
+    },
+    "4.6L V8 Automática": {
+        "rango_calculo_eecv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eecv": "0x00000010"
+    },
+    "U4P0": {
+        "rango_calculo_eeciv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eeciv": "0x00000010"
+    },
+    "W4H0": {
+        "rango_calculo_eeciv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eeciv": "0x00000010"
+    },
+    "A9L": {
+        "rango_calculo_eeciv": ["0x00000000", "0x0000000F"],
+        "direccion_checksum_eeciv": "0x00000010"
+    }
+}
