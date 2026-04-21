@@ -4,7 +4,14 @@ Programa Base terminado para EEC V
 
 
 
+Intrucciones:
+1.-Cargar el archivo
+2.-elegir el tipo de transmision
+3.- Dar click en "Desactivar PATS"
 
+El archivo se guardara en la carpeta con aparatdo IMMO_OFF.BIN
+
+Listo!! El archivo se carga en la computadora.
 
 ⚠️ AVISO IMPORTANTE / LEGAL NOTICE
 
