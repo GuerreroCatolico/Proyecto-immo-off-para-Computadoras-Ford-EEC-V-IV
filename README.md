@@ -1,3 +1,11 @@
+Programa Base terminado para EEC V
+<img width="500" height="379" alt="Captura" src="https://github.com/user-attachments/assets/55a0e55e-73de-4451-8684-91c805f5ae3b" />
+
+
+
+
+
+
 ⚠️ AVISO IMPORTANTE / LEGAL NOTICE
 
 Este software y el código fuente están diseñados y destinados EXCLUSIVAMENTE para fines de estudio, investigación, diagnóstico técnico y reparación de equipos.
