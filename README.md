@@ -9,7 +9,7 @@ Intrucciones:
 2.-elegir el tipo de transmision
 3.- Dar click en "Desactivar PATS"
 
-El archivo se guardara en la carpeta con aparatdo IMMO_OFF.BIN
+El archivo se guardara en la carpeta con apartado IMMO_OFF.BIN
 
 Listo!! El archivo se carga en la computadora.
 
